@@ -1,0 +1,84 @@
+.ai-review-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.ai-suggestion {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.ai-suggestion.high {
+  border-left: 4px solid #ff5630;
+}
+
+.ai-suggestion.medium {
+  border-left: 4px solid #ffab00;
+}
+
+.ai-suggestion.low {
+  border-left: 4px solid #36b37e;
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #6b778c;
+  font-size: 12px;
+}
+
+.suggestion-content {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.suggestion-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.suggestion-actions button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+}
+
+.suggestion-actions button:hover {
+  background: #f4f5f7;
+}
+
+.panel-actions {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#ai-review-button {
+  margin-left: 10px;
+}
+
+#ai-review-button.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
